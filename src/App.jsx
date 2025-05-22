@@ -36,7 +36,7 @@ const App = () => {
         {/* ne pas oublie que chaque enfant dois avoir une clé unique */}
         {/* en faisaint mealsDatta && je dis si mealsData est vrai alors fait le map sinon ne fait rien  */}
         {mealsData &&
-          mealsData.slice(0, 24).map((meal) => (
+          mealsData.slice(0, 12).map((meal) => (
             // rappelle le meal c'est le nom que je donne pour la retrouver dans le composant Card
             <Card key={meal.idMeal} meal={meal} />
           ))}
